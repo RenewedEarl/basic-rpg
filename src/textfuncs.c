@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void getStringInput(char *string, int maxLength)
 {
@@ -53,4 +54,15 @@ void printStatSheet(char *name, char *job, int hp, int atk, int def, int mag, in
     printf("Magic: %d\n", mag);
     printf("Magic Defense: %d\n", mgdef);
     printf("Speed: %d\n", spe);
+}
+
+void waitForEnter()
+{
+    printf("...");
+    getchar(); // Wait for Enter
+}
+
+void clearScreen()
+{
+    system("clear");
 }
