@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "../include/characters.h"
 
 void getStringInput(char *string, int maxLength)
 {
@@ -65,4 +66,10 @@ void waitForEnter()
 void clearScreen()
 {
     system("clear");
+}
+
+void printHealthInSingleBattles(Character mc, Monster foe)
+{
+    printf("--- %s / %d HP ---\n", mc.name, mc.health);
+    printf("--- %s / %d HP ---\n", foe.name, foe.health);
 }
