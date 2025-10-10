@@ -33,7 +33,7 @@ void printMainMenus()
                 waitForEnter();
                 clearScreen();
                 menuState = 1;
-                mainAdventureArea();
+                areaControl();
             case 2:
                 printf("Thanks for playing!\n");
                 exit(0);
@@ -62,8 +62,10 @@ void printMainMenus()
                 printf("Now that that's out of the way, please enjoy the adventure!\n");
                 waitForEnter();
                 clearScreen();
-                mainAdventureArea();
+                areaControl();
             case 2:
+                printf("Feature not implemented yet.\n");
+                break;
             case 3:
                 printStatSheet(player.name, player.job, player.health, player.attack, player.defense, player.magic, player.magicDefense, player.speed);
                 break;

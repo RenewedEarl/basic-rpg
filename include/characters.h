@@ -24,6 +24,7 @@ typedef struct Monster
     int defense;
     int magicDefense;
     int speed;
+    int offenseType;
 } Monster;
 
 // Character Objects

@@ -17,9 +17,10 @@ Monster goblin =
     .name = "Goblin",
     .expYield = 75,
     .health = 20,
-    .attack = 5,
+    .attack = 8,
     .magic = 0,
     .defense = 3,
     .magicDefense = 3,
-    .speed = 3
+    .speed = 3,
+    .offenseType = 1
 };
