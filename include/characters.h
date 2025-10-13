@@ -7,6 +7,7 @@ typedef struct Character
     char name[100];
     char job[100];
     int health;
+    int maxHealth;
     int attack;
     int magic;
     int defense;
@@ -19,6 +20,7 @@ typedef struct Monster
     char name[100];
     int expYield;
     int health;
+    int maxhealth;
     int attack;
     int magic;
     int defense;

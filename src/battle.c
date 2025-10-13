@@ -15,6 +15,16 @@ int getRandom(int min, int max)
     return rand() % (max - min + 1) + min;
 }
 
+void healParty(Character hero)
+{
+    hero.health = hero.maxHealth;
+}
+
+void singleEnemyHealthReset(Monster enemy)
+{
+    enemy.health = enemy.maxhealth;
+}
+
 void initSingleBattle(Character hero, Monster enemy)
 {
     battleMenuCounter = 0;
@@ -52,6 +62,8 @@ void initSingleBattle(Character hero, Monster enemy)
                 printf("%s had died, you gained %d experience points!\n", enemy.name, enemy.expYield);
                 waitForEnter();
                 clearScreen();
+                healParty(hero);
+                singleEnemyHealthReset(enemy);
                 if(tutorialState != 1)
                 {
                     tutorialState = 1;
@@ -123,6 +135,8 @@ void initSingleBattle(Character hero, Monster enemy)
                     {
                         printf("This was just a tutorial so you live, but you will die any other time.\n");
                         tutorialState = 1;
+                        healParty(hero);
+                        singleEnemyHealthReset(enemy);
                         return;
                     }
                     else
@@ -151,6 +165,8 @@ void initSingleBattle(Character hero, Monster enemy)
                 printf("%s had died, you gained %d experience points!\n", enemy.name, enemy.expYield);
                 waitForEnter();
                 clearScreen();
+                healParty(hero);
+                singleEnemyHealthReset(enemy);
                 if(tutorialState != 1)
                 {
                     tutorialState = 1;
@@ -222,6 +238,8 @@ void initSingleBattle(Character hero, Monster enemy)
                     {
                         printf("This was just a tutorial so you live, but you will die any other time.\n");
                         tutorialState = 1;
+                        healParty(hero);
+                        singleEnemyHealthReset(enemy);
                         return;
                     }
                     else
@@ -300,6 +318,8 @@ void initSingleBattle(Character hero, Monster enemy)
                 {
                     printf("This was just a tutorial so you live, but you will die any other time.\n");
                     tutorialState = 1;
+                    healParty(hero);
+                    singleEnemyHealthReset(enemy);
                     return;
                 }
                 else

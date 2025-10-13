@@ -91,6 +91,7 @@ void newGameSequence()
         if(strcmp(player.job, "Warrior") == 0)
         {
             player.health = 30;
+            player.maxHealth = 30;
             player.attack = 10;
             player.magic = 0;
             player.defense = 8;
@@ -106,6 +107,7 @@ void newGameSequence()
         else if(strcmp(player.job, "Mage") == 0)
         {
             player.health = 25;
+            player.maxHealth = 25;
             player.attack = 5;
             player.magic = 10;
             player.defense = 5;
@@ -121,6 +123,7 @@ void newGameSequence()
         else if(strcmp(player.job, "Healer") == 0)
         {
             player.health = 30;
+            player.maxHealth = 30;
             player.attack = 3;
             player.magic = 10;
             player.defense = 7;
@@ -136,6 +139,7 @@ void newGameSequence()
         else if(strcmp(player.job, "Rogue") == 0)
         {
             player.health = 20;
+            player.maxHealth = 20;
             player.attack = 9;
             player.magic = 7;
             player.defense = 5;
