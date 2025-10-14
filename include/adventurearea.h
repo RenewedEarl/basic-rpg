@@ -10,5 +10,6 @@ extern Area controller;
 
 void areaControl();
 void startingArea();
+void etnaForest();
 
 #endif

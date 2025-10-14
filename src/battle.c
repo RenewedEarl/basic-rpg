@@ -62,10 +62,10 @@ void initSingleBattle(Character hero, Monster enemy)
                 printf("%s had died, you gained %d experience points!\n", enemy.name, enemy.expYield);
                 waitForEnter();
                 clearScreen();
-                healParty(hero);
                 singleEnemyHealthReset(enemy);
                 if(tutorialState != 1)
                 {
+                    healParty(hero);
                     tutorialState = 1;
                 }
                 battleMenuCounter = 1;
@@ -165,10 +165,10 @@ void initSingleBattle(Character hero, Monster enemy)
                 printf("%s had died, you gained %d experience points!\n", enemy.name, enemy.expYield);
                 waitForEnter();
                 clearScreen();
-                healParty(hero);
                 singleEnemyHealthReset(enemy);
                 if(tutorialState != 1)
                 {
+                    healParty(hero);
                     tutorialState = 1;
                 }
                 battleMenuCounter = 1;
